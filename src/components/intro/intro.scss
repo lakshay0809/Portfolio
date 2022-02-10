@@ -1,0 +1,160 @@
+@import "../../global.scss";
+
+.intro {
+  background-color: white;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+    background-color: #fff;
+
+    .imgContainer {
+      width: 700px;
+      height: 700px;
+      background-color: white;
+      border-radius: 10%;
+      display: flex;
+
+      justify-content: center;
+      float: right;
+
+      @include mobile {
+        align-items: flex-start;
+      }
+
+      img {
+        height: 80%;
+
+        @include mobile {
+          height: 50%;
+        }
+      }
+    }
+  }
+  .right {
+    flex: 0.5;
+    position: relative;
+
+    .wrapper {
+      width: 100%;
+      height: 70%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 60px;
+        margin: 10px 0;
+        color: black;
+
+        @include mobile {
+          font-size: 40px;
+        }
+      }
+      h2 {
+        font-size: 35px;
+        color: black;
+      }
+      h3 {
+        font-size: 30px;
+
+        @include mobile {
+          font-size: 20px;
+        }
+
+        span {
+          font-size: inherit;
+          color: crimson;
+        }
+
+        .ityped-cursor {
+          animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+    }
+    .buttons {
+      width: 100%;
+      display: flex;
+      padding-left: 50px;
+      display: inline-table;
+      flex-direction: column;
+      justify-content: center;
+
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
+    }
+    .button {
+      margin-top: 2%;
+      // margin-left: 5%;
+      width: 30%;
+      border: 0;
+      text-align: center;
+      justify-content: center;
+      display: inline-block;
+      background: crimson;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      -webkit-transition: all ease-in-out 300ms;
+      transition: all ease-in-out 300ms;
+    }
+    .button:hover {
+      box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+      -webkit-transform: translate(0px, -10px) scale(1.2);
+      transform: translate(0px, -10px) scale(1.2);
+    }
+    .button2 {
+      width: 30%;
+      border: 0;
+      margin-left: 5%;
+      text-align: center;
+      justify-content: center;
+      display: inline-block;
+      background: crimson;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      -webkit-transition: all ease-in-out 300ms;
+      transition: all ease-in-out 300ms;
+    }
+    .button2:hover {
+      box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+      -webkit-transform: translate(0px, -10px) scale(1.2);
+      transform: translate(0px, -10px) scale(1.2);
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      justify-content: center;
+    }
+  }
+}
