@@ -19,14 +19,7 @@ export default function Skills() {
       desc: "In programming languages I know C ,C++ ,JAVA and some basics of Python. For solving competitive questions I mainly uses Java. ",
       featured: true,
     },
-    {
-      id: 3,
-      titles: "Graphics software",
-      name: "Adobe Illustrator",
-      title: "Adobe XD,Figma",
-
-      desc: "I love making UI designs for which i use Adobe Xd, Figma and Adobe illustrator.",
-    },
+   
   ];
   return (
     <div className="skills" id="skills">
